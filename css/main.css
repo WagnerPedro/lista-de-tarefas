@@ -9,10 +9,10 @@
 }
 
 body {
-    font: normal bold 1em poppins;
+    /* font: normal bold 1em poppins; */
     height: 100vh;
     background-color: #000000;
-    background-image: linear-gradient(180deg, rgb(49, 49, 49), #446f6b); 
+    background-image: linear-gradient(180deg, rgb(49, 49, 49), #446f6b);
     display: flex;
     align-items: center;
 }
