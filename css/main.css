@@ -1,7 +1,80 @@
 @charset "UTF-8";
 
-/* Initial styling */
+/* Initial styling and reset */
+
+* {
+    box-sizing: border-box;
+    /* padding: 0; */
+    margin: 0;
+}
 
 body {
     font: normal bold 1em poppins;
+    height: 100vh;
+    background-color: #000000;
+    background-image: linear-gradient(180deg, rgb(49, 49, 49), #446f6b); 
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 680px;
+    height: 680px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0 15px;
+    background-color: #212121;
+    box-shadow: 2px 2px 2.5px #212121;
+}
+
+.container > header .btn-add-container .btn-add {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 30px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.container > header .title {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.container > header .search-box > #searchtxt {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    border-radius: 7px;
+    background: #444444;
+    color: #ffffff;
+    background-image: url('../assets/icon/lupa.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 17px;
+    background-origin: content-box;
+}
+
+.container > header .search-box > #searchtxt::placeholder {
+    color: #ffffff;
+    font-size: 17px;
+    font-family: poppins;
+    font-weight: 300;
+}
+
+.container main > .ilustration {
+    margin: 10px auto;
+    width: 390px;
+}
+
+.container main > .ilustration img {
+    width: 100%;
+}
+
+.info p {
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 12px;
+    font-weight: 400;
+    user-select: none;
 }
