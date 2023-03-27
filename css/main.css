@@ -4,12 +4,12 @@
 
 * {
     box-sizing: border-box;
-    /* padding: 0; */
+    padding: 0;
     margin: 0;
 }
 
 body {
-    /* font: normal bold 1em poppins; */
+    font: normal bold 1em poppins;
     height: 100vh;
     background-color: #000000;
     background-image: linear-gradient(180deg, rgb(49, 49, 49), #446f6b);
@@ -58,12 +58,6 @@ body {
     background-position: right center;
     background-size: 17px;
     background-origin: content-box;
-    /* opacity: 1;
-    animation-name: fade;
-    animation-duration: 2s;
-    animation-delay: 1.3s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards; */
 }
 
 .container > header .search-box > #searchtxt::placeholder {
@@ -105,16 +99,6 @@ body {
     
     to {
         transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-
-    top {
         opacity: 1;
     }
 }

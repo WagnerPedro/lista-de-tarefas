@@ -1,2 +1,43 @@
 @charset "UTF-8";
 
+@media only screen and (max-width: 690px) {
+    .container {
+        max-width: 375px;
+        height: 680px;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 0 15px;
+        background-color: #212121;
+        box-shadow: 2px 2px 2.5px #212121;
+        padding: 20px;
+    }
+
+    .container > header .title {
+        font-size: 15px;
+    }
+
+    .container > header .search-box > #searchtxt {
+        padding: 8px;
+        background-image: url('../assets/icon/lupa.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 14px;
+        background-origin: content-box;
+    }
+
+    .container > header .search-box > #searchtxt::placeholder {
+        font-size: 13px;
+    }
+
+    .container main > .ilustration {
+        width: 100%;
+    }
+
+    .container main > .ilustration img {
+        width: 100%;
+    }
+
+    .info p {
+        font-size: 1em;
+    }
+}
