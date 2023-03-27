@@ -36,7 +36,7 @@ body {
 }
 
 .container > header .title {
-    /* font-size: 1.1em; */
+    font-size: 1.1em;
     color: #ffffff;
     user-select: none;
     animation-name: slideRight;
