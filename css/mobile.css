@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 690px) {
     .container {
-        max-width: 375px;
+        width: 375px;
         height: 680px;
         margin: 0 auto;
         border-radius: 10px;
@@ -10,6 +10,7 @@
         background-color: #212121;
         box-shadow: 2px 2px 2.5px #212121;
         padding: 20px;
+        transition: width .7s;
     }
 
     .container > header .title {

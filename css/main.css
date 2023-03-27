@@ -25,6 +25,7 @@ body {
     padding: 0 15px;
     background-color: #212121;
     box-shadow: 2px 2px 2.5px #212121;
+    transition: width .7s;
 }
 
 .container > header .btn-add-container .btn-add {
