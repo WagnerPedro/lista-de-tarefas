@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @media only screen and (max-width: 690px) {
+    html, body {
+        scroll-behavior: smooth;
+    }
     .container {
         width: 375px;
         height: 680px;
