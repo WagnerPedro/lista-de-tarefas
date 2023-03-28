@@ -10,10 +10,13 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Task List</title>
 </head>
 <body>
+    <!-- Container -->
     <div class="container">
+        <!-- Header/cabeçalho -->
         <header>
             <div class="btn-add-container">
                 <span class="btn-add">+</span>
@@ -25,6 +28,7 @@
                 <input type="text" name="searchtxt" id="searchtxt" placeholder="Pesquisar..." autocomplete="off">
             </div>
         </header>
+        <!-- Main / conteúdo principal -->
         <main>
             <div class="ilustration">
                 <img src="assets/img/sheet-ilustration.png" alt="ilustration" width="100%">
@@ -34,6 +38,34 @@
                 <p>para criar uma nova anotação</p>
             </div>
         </main>
+    </div>
+
+    <!-- modal window -->
+    <div class="note-box">
+        <!-- top btn list -->
+        <div class="btn-list1">
+            <span class="note-box-btn">+</span>
+            <span class="more-options-btn">...</span>
+            <span class="close-note-box-btn">&times;</span>
+        </div>
+        <!-- text area  -->
+        <textarea name="input-note" id="input-note" cols="30" rows="10"></textarea>
+        <hr>
+        <!-- bottom btn list -->
+        <div class="btn-list2">
+            <span class="bold-btn">
+                <img src="./assets/icon/bold-btn.png" alt="bold icon" class="icon">
+            </span>
+            <span class="italic-btn">
+                <img src="./assets/icon/italic-btn.png" alt="italic icon" class="icon">
+            </span>
+            <span class="underline-btn">
+                <img src="./assets/icon/underline-btn.png" alt="underline icon" class="icon">
+            </span>
+            <span class="list-btn">
+                <img src="./assets/icon/list-btn.png" alt="list icon" class="icon">
+            </span>
+        </div>
     </div>
 </body>
 </html>
