@@ -49,21 +49,10 @@
     outline: var(--scolor);
     border: 1px solid var(--scolor);
     color: var(--thcolor);
-    font-size: 1em;
+    font-size: 1.2em;
     user-select: none;
 }
 
-/* scrollbar */
-.note-box textarea#input-note::-webkit-scrollbar {
-    background-color: #454545;
-    width: 10px;
-    border-radius: 5px;
-}
-
-.note-box textarea#input-note::placeholder {
-    color: var(--thcolor);
-    font-size: 1em;
-}
 
 /* bottom buttoms */
 .btn-list2 {
@@ -71,11 +60,10 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    
 }
 
 .btn-list2 span svg {
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 4px;
     cursor: pointer;
 }
