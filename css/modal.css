@@ -1,0 +1,48 @@
+:root {
+    --fcolor: #454545;
+    --scolor: #333333;
+    --thcolor: #c1c1c1;
+}
+
+.note-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: var(--scolor);
+    /* border: 1px solid rgb(0, 0, 255); */
+}
+
+.btn-list1 {
+    position: relative;
+    background-color: var(--fcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.btn-list1 > .note-box-btn {
+    color: var(--thcolor);
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.btn-list1 .right-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-list1 > .note-box-btn + .right-btn > .more-options-btn,  .btn-list1 > .note-box-btn + .right-btn > .close-note-box-btn {
+    color: var(--thcolor);
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.icon {
+    width: 20px;
+}
