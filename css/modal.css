@@ -4,30 +4,26 @@
     --thcolor: #c1c1c1;
 }
 
+/* container note-box */
 .note-box {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height: 300px;
+    width: 299px; 
     background: var(--scolor);
     /* border: 1px solid rgb(0, 0, 255); */
 }
 
+/* top buttoms  */
 .btn-list1 {
     position: relative;
     background-color: var(--fcolor);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3%;
-}
-
-.btn-list1 > .note-box-btn {
-    color: var(--thcolor);
-    font-size: 2em;
-    font-weight: 300;
+    user-select: none;
+    /* padding: 0 3%; */
 }
 
 .btn-list1 .right-btn {
@@ -37,12 +33,49 @@
     align-items: center;
 }
 
-.btn-list1 > .note-box-btn + .right-btn > .more-options-btn,  .btn-list1 > .note-box-btn + .right-btn > .close-note-box-btn {
-    color: var(--thcolor);
-    font-size: 2em;
-    font-weight: 300;
+.btn-list1 span > svg {
+    cursor: pointer;
 }
 
-.icon {
-    width: 20px;
+.bi.bi-three-dots {
+    margin-right: 10px;
+}
+
+/* textarea */
+.note-box textarea#input-note {
+    max-width: 299px; 
+    height: 224px;
+    background: var(--scolor);
+    outline: var(--scolor);
+    border: 1px solid var(--scolor);
+    color: var(--thcolor);
+    font-size: 1em;
+    user-select: none;
+}
+
+/* scrollbar */
+.note-box textarea#input-note::-webkit-scrollbar {
+    background-color: #454545;
+    width: 10px;
+    border-radius: 5px;
+}
+
+.note-box textarea#input-note::placeholder {
+    color: var(--thcolor);
+    font-size: 1em;
+}
+
+/* bottom buttoms */
+.btn-list2 {
+    padding: 4px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+.btn-list2 span svg {
+    cursor: pointer;
+    margin: 0 10px;
+    cursor: pointer;
 }
