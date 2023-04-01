@@ -67,3 +67,15 @@
   margin: 0 4px;
   cursor: pointer;
 }
+
+.colors {
+  background-color: #cfb646;
+  width: 100%;
+  height: 34px;
+  position: relative;
+  top: -266px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
