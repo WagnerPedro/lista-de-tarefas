@@ -12,7 +12,7 @@
   transform: translate(-50%, -50%);
   width: 299px;
   background: var(--scolor);
-  display: none;
+  display: block;
   /* border: 1px solid rgb(0, 0, 255); */
 }
 
