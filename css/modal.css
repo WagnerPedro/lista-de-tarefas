@@ -1,70 +1,69 @@
 :root {
-    --fcolor: #454545;
-    --scolor: #333333;
-    --thcolor: #c1c1c1;
+  --fcolor: #454545;
+  --scolor: #333333;
+  --thcolor: #c1c1c1;
 }
 
 /* container note-box */
 .note-box {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 299px; 
-    background: var(--scolor);
-    display: none;
-    /* border: 1px solid rgb(0, 0, 255); */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 299px;
+  background: var(--scolor);
+  display: none;
+  /* border: 1px solid rgb(0, 0, 255); */
 }
 
 /* top buttoms  */
 .btn-list1 {
-    position: relative;
-    background-color: var(--fcolor);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
-    /* padding: 0 3%; */
+  position: relative;
+  background-color: var(--fcolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  /* padding: 0 3%; */
 }
 
 .btn-list1 .right-btn {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 
 .btn-list1 span > svg {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .bi.bi-three-dots {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* textarea */
 .note-box textarea#input-note {
-    max-width: 299px; 
-    height: 224px;
-    background: var(--scolor);
-    outline: var(--scolor);
-    border: 1px solid var(--scolor);
-    color: var(--thcolor);
-    font-size: 1.2em;
-    user-select: none;
+  max-width: 299px;
+  height: 224px;
+  background: var(--scolor);
+  outline: var(--scolor);
+  border: 1px solid var(--scolor);
+  color: var(--thcolor);
+  font-size: 1.2em;
+  user-select: none;
 }
-
 
 /* bottom buttoms */
 .btn-list2 {
-    padding: 4px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .btn-list2 span svg {
-    cursor: pointer;
-    margin: 0 4px;
-    cursor: pointer;
+  cursor: pointer;
+  margin: 0 4px;
+  cursor: pointer;
 }
