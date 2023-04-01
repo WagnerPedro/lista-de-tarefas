@@ -1,0 +1,7 @@
+.task {
+  width: 100%;
+  overflow: hidden;
+  background: #3e3e3e;
+  height: 45px;
+  border-radius: 5px;
+}
