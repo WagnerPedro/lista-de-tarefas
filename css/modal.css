@@ -69,13 +69,34 @@
 }
 
 .colors {
-  background-color: #cfb646;
+  background-color: #1e1927;
   width: 100%;
   height: 34px;
   position: relative;
   top: -266px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+}
+
+.color {
+  width: 25%;
+  height: 34px;
+  background: transparent;
+}
+
+#first {
+  background-color: #e6b904;
+}
+
+#second {
+  background-color: #65ba5a;
+}
+
+#thirth {
+  background-color: #e12e99;
+}
+
+#fourth {
+  background-color: #b07fe0;
 }
