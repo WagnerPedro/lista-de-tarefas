@@ -10,14 +10,9 @@ let modalContent = document.getElementById("input-note");
 
 function mostraModal(addTask) {
   addTask.addEventListener("click", ()=> {
-    console.log('it worked!')
+    noteWindow.style.display = 'block'
   })
 }
 
 addTask.addEventListener("click", mostraModal(addTask))
 
-function showColorsOption(moreOptions) {
-  moreOptions.addEventListener("click", ()=>{
-    colorsModal.classList.add("showColors")
-  })
-}

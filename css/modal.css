@@ -12,7 +12,7 @@
   transform: translate(-50%, -50%);
   width: 299px;
   background: var(--scolor);
-  display: block;
+  display: none;
   /* border: 1px solid rgb(0, 0, 255); */
 }
 
@@ -68,21 +68,24 @@
   cursor: pointer;
 }
 
+/* Modal styling */
 .colors {
   background-color: #1e1927;
   width: 100%;
-  height: 34px;
+  height: 30px;
   position: relative;
   top: -266px;
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
 }
 
 .color {
   width: 25%;
-  height: 34px;
+  height: 32px;
   background: transparent;
+  user-select: none;
+  cursor: default;
 }
 
 #first {
