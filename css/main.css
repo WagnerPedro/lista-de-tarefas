@@ -117,3 +117,30 @@ body {
         transform: scale(100%);
     }
 }
+
+.error {
+    color: #506d63;
+    text-align: left;
+    background-color: #282c23;
+    padding: 2px 13px;
+    margin: 15px auto;
+    /* border: solid 2px ; */
+    border-radius: 5px;
+    text-transform: uppercase;
+    animation: pisca;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: fit-content;
+}
+
+@keyframes pisca {
+    from {
+        color: #282c23;
+    }
+    to {
+        color: rgb(255, 112, 112);
+    }
+}
