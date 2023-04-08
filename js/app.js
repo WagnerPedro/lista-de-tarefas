@@ -16,20 +16,6 @@ function closeNoteBox() {
 }
 closeNoteBoxBtn.addEventListener("click", closeNoteBox);
 
-function showError(error) {
-  const messageError = document.createElement("p");
-  messageError.textContent = error;
-  messageError.classList.add("error");
-  listTasks.appendChild(messageError);
-
-  setTimeout(() => {
-    messageError.remove();
-    addNoteBox();
-  }, 3000);
-
-  //   console.log(error)
-}
-
 function addTasks() {
   const task = input.value;
   if (task === "") {
@@ -40,13 +26,36 @@ function addTasks() {
   }
   closeNoteBox();
   const taskObject = {
-    task: tasks,
+    task,
     id: Date.now(),
-    createdAt: new Date().getHours() + ":" + new Date().getMinutes()
-  }
-  tasks = [...tasks, taskObject]
+    createdAt: new Date().getHours() + ":" + new Date().getMinutes(),
+  };
+  tasks = [...tasks, taskObject];
 
-  
+  createHTML();
+}
+
+function createHTML() {
+    if (tasks.length > 0) {
+        tasks.forEach(task => {
+            const li = document.createElement("li")
+            li.innerHTML = `${task.tasks} <span task-id="${task.id}" task-date="${task.createdAt}">X<span/>`
+
+            listTasks.appendChild(li)
+        });
+    }
+}
+
+function showError(error) {
+  const messageError = document.createElement("p");
+  messageError.textContent = error;
+  messageError.classList.add("error");
+  listTasks.appendChild(messageError);
+
+  setTimeout(() => {
+    messageError.remove();
+    addNoteBox();
+  }, 3000);
 }
 
 noteBoxBtn.addEventListener("click", addTasks);
