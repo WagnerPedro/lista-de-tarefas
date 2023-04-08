@@ -19,43 +19,51 @@ closeNoteBoxBtn.addEventListener("click", closeNoteBox);
 function addTasks() {
   const task = input.value;
   if (task === "") {
-    showError("O campo está vazio!");
-    closeNoteBox();
-    input.value = "";
+    showError("The field is empty...");
     return;
   }
-  closeNoteBox();
-  const taskObject = {
+
+  const taskObj = {
     task,
     id: Date.now(),
-    createdAt: new Date().getHours() + ":" + new Date().getMinutes(),
   };
-  tasks = [...tasks, taskObject];
+  tasks = [...tasks, taskObj];
 
   createHTML();
+  input.value = "";
 }
 
 function createHTML() {
-    if (tasks.length > 0) {
-        tasks.forEach(task => {
-            const li = document.createElement("li")
-            li.innerHTML = `${task.tasks} <span task-id="${task.id}" task-date="${task.createdAt}">X<span/>`
+  clearHTML();
 
-            listTasks.appendChild(li)
-        });
-    }
+  if (tasks.length > 0) {
+    tasks.forEach((task) => {
+      const li = document.createElement("li");
+      li.innerHTML = `${task.task} <span task-id="${task.id}" >X</span>`;
+
+      listTasks.appendChild(li);
+    });
+  }
+
+  sincronizationStorage();
 }
 
-function showError(error) {
-  const messageError = document.createElement("p");
-  messageError.textContent = error;
-  messageError.classList.add("error");
-  listTasks.appendChild(messageError);
-
-  setTimeout(() => {
-    messageError.remove();
-    addNoteBox();
-  }, 3000);
+function sincronizationStorage(){
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-noteBoxBtn.addEventListener("click", addTasks);
+function showError(error){
+    const messageError = document.createElement('p');
+    messageError.textContent = error;
+    messageError.classList.add('error');
+
+    message.appendChild(messageError);
+    setTimeout(() => {
+        messageError.remove();
+    },2000);
+
+}
+
+function clearHTML(){
+    listTasks.innerHTML = '';
+}
